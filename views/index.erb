@@ -1,0 +1,16 @@
+<h2>Git R Done!</h2>
+
+<div>
+<% @todos.each do |todo| %>
+  <li>
+    <%= todo.description %>
+  </li>
+<% end %>
+</div>
+
+<div>
+  <form action="/" method="post">
+    <input type="text" name="description">
+    <input type="submit">
+  </form>
+</div>
