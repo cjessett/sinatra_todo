@@ -7,7 +7,7 @@ create the database
 `rake db:create`
 
 migrate tables
-'rake db:migrate`
+`rake db:migrate`
 
 run the app
 `shotgun app.rb`
