@@ -1,15 +1,19 @@
 <h2>Git R Done!</h2>
 
-<div>
+
 <% @todos.each do |todo| %>
-  <li>
-    <%= todo.description %>
-  </li>
+  <article>
+    <li>
+      <%= todo.description %>
+      <span><a href="/todos/<%= todo.id %>">[edit]</a></span>
+      <span><a href="/todos/<%= todo.id %>/delete">[delete]</a></span>
+    </li>
+  </article>
 <% end %>
-</div>
+
 
 <div>
-  <form action="/" method="post">
+  <form action="/todos" method="post">
     <input type="text" name="description">
     <input type="submit">
   </form>

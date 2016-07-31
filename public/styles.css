@@ -10,3 +10,13 @@ h2 {
   margin-top: 1em;
   padding-top: 1em;
 }
+
+article {
+  border: 1px solid #eee;
+  border-top: none;
+  padding: 15px 10px;
+}
+
+article:nth-child(even) {
+  background: #fafafa;
+}

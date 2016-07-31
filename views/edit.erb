@@ -1,0 +1,10 @@
+<% if @todo %>
+  <form action='/todos/<%= @todo.id %>' method='post'>
+    <input type="hidden" name="_method" value="put">
+    <textarea name="description"><%= @todo.description %></textarea>
+    <input type="submit">
+  </form>
+  <p><a href="todos/:id/delete"></a></p>
+<% else %>
+  <p>Note not found.</p>
+<% end %>
